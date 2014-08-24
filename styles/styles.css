@@ -1,0 +1,119 @@
+* { margin: 0; padding: 0; }
+body { background: url("../images/wooden-floor-with-green-background.jpg") center no-repeat; }
+
+.center {
+    position: relative;
+    width: 725px;
+    height: 185px;
+    margin: 0 auto;
+    padding-top: 250px;
+    text-align: center;
+}
+
+.cupWrap {
+    position: absolute;
+    display: inline-block;
+    width: 165px;
+    height: 252px;
+    cursor: pointer;
+    -webkit-transition: left 0.5s ease-in-out;
+    transition: left 0.5s ease-in-out;
+    -moz-transition: left 0.5s ease-in-out;
+    -ms-transition: left 0.5s ease-in-out;
+    -o-transition: left 0.5s ease-in-out;
+}
+.cupWrap:nth-child(1) { left: 0; }
+.cupWrap:nth-child(2) { left: 280px; }
+.cupWrap:nth-child(3) { left: 560px; }
+
+.cupUp {
+    -webkit-transform: translateY(-40px) translateX(40px) rotateZ(25deg);
+    transform: translateY(-40px) translateX(40px) rotateZ(25deg);
+    -ms-transform: translateY(-40px) translateX(40px) rotateZ(25deg);
+    -o-transform: translateY(-40px) translateX(40px) rotateZ(25deg);
+    -moz-transform: translateY(-40px) translateX(40px) rotateZ(25deg);
+}
+
+.cup {
+    position: relative;
+    width: 165px;
+    height: 252px;
+    background: url("../images/thimble.png");
+    z-index: 100;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    -ms-transition: -ms-transform 0.3s ease-in-out;
+    -o-transition: -o-transform 0.3s ease-in-out;
+    -moz-transition: -moz-transform 0.3s ease-in-out;
+}
+
+.button {
+    position: relative;
+    top: 280px;
+    border-radius: 50%;
+    padding: 22px;
+    border: none;
+    font-size: 17px;
+    font-family: Century Gothic;
+    background-color: #F10505;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.button:focus { outline: none; }
+
+.thing {
+    background-image: url("../images/480px-Coffee_bean_transparent.png");
+    position: relative;
+    left: 60px;
+    bottom: 42px;
+    visibility: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.winner div:last-of-type { visibility: visible; }
+
+.message {
+    position: fixed;
+    top: 110px;
+    left: 252px;
+    width: 220px;
+    height: 100px;
+    background-color: rgba(240, 232, 232, 0.48);
+    z-index: 100;
+    margin: 0 auto;
+    border-radius: 2px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.52);
+}
+
+#youHaveWon { display: none; }
+
+.message p {
+    text-align: center;
+    padding: 20px 0;
+    font: normal 16px "Century Gothic";
+    color: #000;
+}
+
+.message button {
+    position: relative;
+    bottom: 5px;
+    width: 48px;
+    height: 30px;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid #A29C9C;
+    font-family: Century Gothic;
+}
+.message button:hover { border: 1px solid #908A8A; }
+
+
+
+
+
+
+
+
+
